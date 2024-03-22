@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Style.module.scss';
 import Header from './header/header';
 import Aside from './aside/aside';
-
+import Content from './content/content';
 
 export default function Home() {
   return (
@@ -16,8 +16,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <Header></Header>
-        <Aside></Aside>
-    
+        <div className={styles.scroll_guide}><span>scroll</span><div className={styles.scroll_guide_divider}></div>down</div>
+        {/* <Aside></Aside> */}
+        <Content className={styles.main_content}></Content>
       </main>
 
       {/* <footer className={styles.footer}>

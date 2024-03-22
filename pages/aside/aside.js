@@ -3,7 +3,6 @@ import styles from '../../styles/Style.module.scss';
 
 export default function Aside(){
     return (
-      <div className={styles.main_container}>
       <aside>
         <div>
           <ul>
@@ -16,7 +15,5 @@ export default function Aside(){
           </ul>
         </div>
       </aside>
-      <div className={styles.main_content}></div>
-    </div>
     )
 }
