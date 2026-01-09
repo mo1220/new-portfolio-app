@@ -1,5 +1,9 @@
-$primary-color: #3f51b5;
- 
+$primary-color: #578bd3;
+$purple  : #B56CFF; //  (네온 보라, 아이콘 외곽)
+$indigo  : #7A8CFF; // (보라→파랑 중간)
+$blue    : #4DA3FF;  // (메인 블루)
+$cyan    : #7FE7FF; // (끝 포인트, 은은)
+
 :export {
   primaryColor: $primary-color;
 }

@@ -15,7 +15,18 @@ export const aside_list = [
         name: 'Career&Portfolio',
         link: '/career',
         icon: '<span class="material-symbols-outlined md-16 me-1">work</span>',
-        children: [],
+        children: [
+            {
+                name: 'Career',
+                html: <span>Career</span>,
+                link: '/career',
+            },
+            {
+                name: 'Portfolio',
+                link: '/portfolio',
+                html: <span>Portfolio</span>,
+            },
+        ],
     },
     {
         name: 'My story',

@@ -12,21 +12,22 @@ export default function Header(){
     return (
         <header className={styles.header}>
           <div className={styles.logo}>
-            <img src="../vercel.svg"></img>
+            <img src="/assets/images/logo/logo2.png"></img>
           </div>
           <nav className={styles.header_nav}>
             <ul className="nav_lv_1" onMouseEnter={() => setHoverState(!hoverState)}>
               {aside_list.map((item, i) => (
-              <li key={i}>
-                <span className="menu_item" dangerouslySetInnerHTML={{ __html: item.icon + item.name}}></span>
-
-
-                {/* <ul>
-                {
-                  item.children.length > 0 && <frameElement dangerouslySetInnerHTML={{ __html: renderChildNav(item.children)}}></frameElement>
+              <li className="nav_item" key={i}>
+                <div className="menu_item_lv1">{item.name}</div>
+                   {
+                  item.children.length > 0 && <ul className="column">
+                      {
+                        item.children.map((lv1, i) => (<li className="menu_item_lv2" key={i}>{lv1.name}</li>))
+                      }
+                  </ul>
                 }
 
-                </ul>                               */}
+                
               </li>
                 
               )

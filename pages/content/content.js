@@ -1,10 +1,8 @@
-import styles from '../../styles/Style.module.scss';
-
+// import styles from './main.scss';
+import Main from './main';
 
 export default function Content() {
   return (
-    <div>
-      
-    </div>
+   <Main className="main"></Main>
   )
 }
