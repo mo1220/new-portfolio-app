@@ -1,7 +1,8 @@
 import styles from '../../styles/Style.module.scss';
+import About from './about/about';
+import PortfolioComponent from './portfolio/portfolio';
 
-
-export default function Content() {
+export default function Main() {
   const text = 'Front-End Developer'
   return (
     <div className={styles.main_content}>
@@ -17,6 +18,9 @@ export default function Content() {
           </h1>
         </div>
       </div>
+
+      <About></About>
+      <PortfolioComponent></PortfolioComponent>
     </div>
   )
 }

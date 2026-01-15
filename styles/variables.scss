@@ -1,11 +1,100 @@
+
+$bg-font-color: #FFF;
 $primary-color: #578bd3;
 $purple  : #B56CFF; //  (네온 보라, 아이콘 외곽)
 $indigo  : #7A8CFF; // (보라→파랑 중간)
 $blue    : #4DA3FF;  // (메인 블루)
 $cyan    : #7FE7FF; // (끝 포인트, 은은)
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-light: #eaecef;
+$gray-dark: #343a40;
+// $primary: #275dcb; //275dcb, 259fff, 007bff
+$secondary: #AAAAAA;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #5A5A5A;
+$font-family-sans-serif: 'Noto Sans KR', 'Roboto', sans-serif;
+$btn-focus-width: .1rem;
+$padding-y: 0.35rem;
+$padding-x: 0.6rem;
+$header-color: #41484c;
+// @debug lighten($primary, 25%);
 
 :export {
   primaryColor: $primary-color;
 }
 
-$bg-font-color: #FFF;
+$link-hover-decoration: none;
+$label-margin-bottom: 0;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$success-colors: $success; // mat-palette($mat-green, 400);
+$warning-colors: $warning; // mat-palette($mat-amber, 400);
+$default-font: 'Noto Sans Korean', 'Roboto', sans-serif; /*'Noto Sans Korean', 'Open Sans', 'Roboto', 'Helvetica', 'Arial', sans-serif;*/
+$code-font: Consolas, Courier New,'monospace', sans-serif;
+$default-font-size: 12px;
+$foreground-color: #393d47;
+$background-color: #f6f7f9;
+$dpt1-bg: #F4F5F7;
+
+$dark-foreground-color: #bcbfc6;
+$dark-background-color: #2c2e36;
+
+// mixin Background Image
+@mixin bg($url, $type: png, $repeat: no-repeat, $pos: center, $color: transparent) {
+//   background: url("/assets/images/#{$url}.#{$type}") $repeat $pos $color;
+}
+
+// mixin Background Color
+@mixin bgColor($color: transparent) {
+  background-color: $color;
+}
+
+$white: #fff;
+$black: #000;
+$light-gray: #D1D1D6;
+$gray: #545454;
+$fa-font-path: '~font-awesome/fonts';
+
+$font-size: .75rem;
+$border-radius: .2rem; //.12rem;
+$border-radius-left: .2rem 0 0 .2rem; //3px 0 0 3px
+$border-radius-top: .2rem .2rem 0 0;
+$df-padding: 0.35rem 0.6rem;
+$lg-padding: 0.5rem 1rem;
+$lg-font-size: 1rem;
+$sm-font-size: .687rem;
+$sm-padding: 0.3rem .45rem;
+$box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 0 2px rgba(10,16,20,.12);
+$box-shadow-hover: 0 8px 8px rgba(10,16,20,.24), 0 0 8px rgba(10,16,20,.12);
+
+/* Header 높이 Aside 최소 최대 Width */
+$aside-max-width: 250px;
+$aside-min-width: 45px;
+$header-height: 45px;
+
+
+/* make the customizations */
+$theme-colors: (
+    "info": $primary-color,
+    "danger": $red
+);

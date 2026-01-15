@@ -1,0 +1,17 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+ 
+    .portfolio-container{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        &-title{
+            font-size: 28px;
+            color: #fff;
+        }
+    }
+}

@@ -22,8 +22,8 @@
     opacity: 0;
     background: url('/assets/images/main_bg.svg');
     animation: stars-move-in 1000ms 300ms forwards;
-    position: absolute;
-    -webkit-animation: stars-move-in 1000ms 300ms forwards;
+    position: fixed;
+
 }
 
   @keyframes stars-move-in {
@@ -40,10 +40,16 @@
   .header {
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;  
     border-bottom: 1px solid rgba(0,0,0, .1);
-    background: rgba($primary-color, .2); //#2196f3;
     color:$bg-font-color;
     height: 70px;
+    &.scroll_down{
+      background: rgba(0,0,0, .2); //#2196f3;
+    }
     .logo {
         padding: 0 1rem;
         display: inline-flex;
@@ -65,6 +71,7 @@
       align-items: center;
       flex: 1;
       margin:0 2.5rem;
+  
       ul {
         padding: 0;
       
@@ -89,7 +96,7 @@
     overflow: auto;
     height: 100%;
     width: 100%;
-  
+    padding-top: 70px;
     &_top {
       display: flex;
       flex-direction: column;
