@@ -4,6 +4,7 @@ import Header from './header/header';
 import Aside from './aside/aside';
 import Content from './content/content';
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
