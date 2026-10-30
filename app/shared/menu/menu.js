@@ -12,6 +12,17 @@ export const aside_list = [
         children: [],
     },
     {
+        name: 'My Project',
+        link: '/my-project',
+        icon: '<span class="material-symbols-outlined md-16 me-1">face_3</span>',
+        children: [
+            {
+                name: '시각화',
+                link: '/my-project/workbook',
+            }
+        ],
+    },
+    {
         name: 'Career&Portfolio',
         link: '/career',
         icon: '<span class="material-symbols-outlined md-16 me-1">work</span>',
