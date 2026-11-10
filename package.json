@@ -5,11 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "server:install": "npm install --prefix server",
-    "server:setup": "npm run setup --prefix server",
-    "server:dev": "npm run dev --prefix server",
-    "server:start": "npm run start --prefix server"
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
